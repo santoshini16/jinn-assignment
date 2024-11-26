@@ -9,7 +9,7 @@ const Customizer = ({ config, setConfig }) => {
   return (
     <div className={styles.customizer}>
       <h2 className={styles.title}>Customize Chat Bot</h2>
-
+{/* 
       <div className={styles.field}>
         <label>Button Icon</label>
         <input
@@ -17,7 +17,7 @@ const Customizer = ({ config, setConfig }) => {
           value={config.buttonIcon}
           onChange={(e) => handleChange('buttonIcon', e.target.value)}
         />
-      </div>
+      </div> */}
 
       <div className={styles.field}>
         <label>Border Color</label>

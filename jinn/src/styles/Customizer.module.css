@@ -56,7 +56,7 @@ select:focus {
 
 select {
   background: linear-gradient(145deg, #007acc, #0059b3);
-  color: #fff;
+  color: black;
 }
 
 /* Custom Color Picker */

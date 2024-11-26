@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     max-width: 1600px;
-    height: auto;
+    height: 100vh;
     margin: auto;
     padding: 1.1rem;
     background-color: #2c93e8;
@@ -12,10 +12,11 @@
 
   .chatButton {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #0078d7;
+    bottom: 40px;
+    right: 50px;
+    background-color: #035fab;
     color: white;
+    font-weight: 800;
     padding: 10px 15px;
     border: none;
     border-radius: 10px;
