@@ -3,7 +3,6 @@ import styles from '../styles/ChatBot.module.css';
 
 const ChatBot = ({ config }) => {
   const {
-    buttonIcon,
     borderColor,
     borderRadius,
     titleBgColor,
@@ -29,19 +28,21 @@ const ChatBot = ({ config }) => {
           backgroundColor: titleBgColor,
         }}
       >
-        <span>{buttonIcon}</span>
+        <div className={styles.buttonIcon}></div>
         <span>Jinn Live - Demo Bot</span>
       </div>
 
       <div className={styles.chatArea}>
-        <div
-          className={styles.botMessage}
-          style={{
-            backgroundColor: botBubbleBg,
-            color: botTextColor,
-          }}
-        >
-          Hello! How can I assist you today?
+        <div className={styles.botMessage}>
+          <div className={styles.buttonIcon}></div>
+          <span
+            style={{
+              backgroundColor: botBubbleBg,
+              color: botTextColor,
+            }}
+          >
+            Hello! How can I assist you today?
+          </span>
         </div>
         <div
           className={styles.userMessage}
@@ -60,10 +61,13 @@ const ChatBot = ({ config }) => {
           placeholder="Ask us anything..."
           className={styles.input}
         />
-        <button className={styles.sendButton}>{buttonIcon}</button>
+        <button className={styles.sendButton}>
+        ➤
+        </button>
       </div>
     </div>
   );
 };
 
 export default ChatBot;
+
